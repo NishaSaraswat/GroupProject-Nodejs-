@@ -1,11 +1,32 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Update page</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <header><a href="#">Blog page</a></header>
+    <hr>
+    <h1>Update post</h1>
+    <form id="update-post-form">
+        <div class="input">
+            <lable for="title">Title</lable>
+            <input type="text" name="title" id="title-input">
+        </div>
+        <div class="input">
+            <lable for="author">Author</lable>
+            <input type="text" name="author" id="author-input">
+        </div>
+        <div class="input">
+            <lable for="content">content</lable>
+            <textarea type="text" name="content" id="content-input" value="content"></textarea>
+        </div>
+        <input type="submit" value="Update">
+    </form>
+    <a href="#">←Back</a>
+    <div id="error-message-box"></div>
     <script src="js/update-post.js"></script>
 </body>
 </html>
