@@ -51,7 +51,7 @@ window.onload = function() {
                     },
                     body: JSON.stringify(object)
                 })
-                //window.location.replace('index.html')
+                window.location.replace('index.html')
 
             } catch (error){
                 document.getElementById('error-message-box').innerText=error;
