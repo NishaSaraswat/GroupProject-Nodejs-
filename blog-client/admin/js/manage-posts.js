@@ -32,7 +32,7 @@ async function fetchPost() {
             <td>
             <a href = "update-post.html" class = "update-post-btn"> Update</a>
             <a href = "" class = "delete-post-btn" data-id="${post['_id']}"> Delete</a>
-           </td>
+            </td>
             </tr>`
     }
     posts.innerHTML += postHTML;
@@ -43,7 +43,7 @@ async function fetchPost() {
 
 
 function deletePost() {
-    // this code might change if the class names are different;
+  
     let deleteBtns = document.getElementsByClassName('delete-post-btn');
 
     for (let deleteBtn of deleteBtns) {

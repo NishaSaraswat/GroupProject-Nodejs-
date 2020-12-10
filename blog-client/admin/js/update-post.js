@@ -21,7 +21,8 @@ window.onload = function() {
         }*/
         
         try{
-            const response=await fetch('http://localhost:3000/posts/'+postId);
+
+            const response=await fetch(`http://localhost:3000/posts/${postId}`);
             const data=await response.json();
             console.log(data);
             $('#title-input')[0].value=`${data.title}`; 
@@ -53,8 +54,7 @@ window.onload = function() {
             }
             console.log(object);
             try{
-
-                await fetch('http://localhost:3000/posts/'+postId,{
+                await fetch(`http://localhost:3000/posts/${postId}`,{
                     method:'PATCH',
                     headers:{
                         'Content-Type': 'application/json'
