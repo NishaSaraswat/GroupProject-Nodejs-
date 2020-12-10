@@ -5,7 +5,7 @@ window.onload = function(){
 }
 //Selectors
 let postHTML = "";
-let posts = document.getElementById("post-table");
+let posts = document.getElementById("table-posts");
 
 async function fetchPost() {
 
@@ -22,6 +22,12 @@ async function fetchPost() {
             <td>
             <p>${post.content} <br>
             <span class="date">${postDate.getFullYear()}-${postDate.getMonth()}-${postDate.getDate()}</span></p>
+            </td>
+            <td>
+            <p>${post.author} <br>
+            </td>
+            <td>
+            <p>${post.tags} <br>
             </td>
             <td>
             <a href = "#" class = "update-post-btn"> Update</a>
