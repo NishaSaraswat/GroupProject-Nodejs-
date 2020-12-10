@@ -9,11 +9,18 @@
 <body>
     <h1>Blog page</h1>
     <h2>Blog posts</h2>
-
+    
     <table id = "post-table"></table>
     <a href="create-post.html" id="admin-button" class="button">Create new post</a>
     <table id="table-posts">
-        
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Tags</th>
+                <th>Action</th>
+            </tr>
+        </thead>
         <tbody id="table-posts-data"></tbody>
   </table>
     <script src="js/manage-posts.js"></script>
