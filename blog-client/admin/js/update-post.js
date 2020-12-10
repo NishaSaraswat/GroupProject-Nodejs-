@@ -3,15 +3,14 @@ window.onload = function() {
     updatePost();
 }
 let tags = $(".tags");
-let checkedBoxesValues = "";
+let checkedBoxesValues = [];
+
 for (let tag of tags) {
 
     tag.addEventListener("click", function () {
 
         if (tag.checked===true){
-            checkedBoxesValues += [tag.value] + " ,";
-        }else{
-            checkedBoxesValues = "";
+            checkedBoxesValues.push(tag.value);
         }
     });
 }
@@ -43,7 +42,7 @@ for (let tag of tags) {
                 title: formData.get('title'),
                 author: formData.get('author'),
                 content: formData.get('content'),
-                tags:    checkedBoxesValues
+                tags:    checkedBoxesValues.join(', ')
             }
             try{
 
