@@ -3,7 +3,7 @@
 
 body{
     box-sizing: border-box;
-    background-image: linear-gradient(rgb(102, 116, 190),white);
+    background-image: linear-gradient(rgb(219, 170, 142),white);
     
     /*background-color: rgb(211, 211, 228);*/
 }
@@ -27,7 +27,7 @@ a{
     display: block;
     width: 50%;
     margin-left: 25%;
-    height: 1.5em;
+   
 }
 
 fieldset{
