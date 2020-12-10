@@ -7,19 +7,24 @@ window.onload = function() {
     async function prefillPostData(){
         const urlParams=new URLSearchParams(window.location.search);
         const postId=urlParams.get('id');
-
-        let postTitle=document.getElementById('title-input');
-        let postAuthor=document.getElementById('author-input');
-        let postContent=document.getElementById('content-input');
-        let postTags='';
-
+        let postTagsChoices='';
+        function getSelectedCheckboxValues(name) {
+            const checkboxes = document.querySelectorAll(`input[name="${name}"]:checked`);
+            let values = [];
+            checkboxes.forEach((checkbox) => {
+                values.push(checkbox.value);
+            });
+            return values;
+        }
+        
         try{
-            const response=await fetch(`http://localhost:3000/posts/${postId}`);
+            const response=await fetch(`http://localhost:3000/posts/5fcfa555bdec50089c289883`);
             const data=await response.json();
-            postTitle.value=`${data.title}`; 
-            postAuthor.value=`${data.author}`;
-            postContent.innerText=`${data.content}`;
-            postTags.innerText=`${data.tags}`;
+            $('#title-input')[0].value=`${data.title}`; 
+            $('#author-input')[0].value=`${data.author}`;
+            $('#content-input')[0].innerText=`${data.content}`;
+            postTagsChoices+=getSelectedCheckboxValues('tags')
+        
         } catch (error){
             document.getElementById('error-message-box').innerText=error;
         }
@@ -39,19 +44,20 @@ window.onload = function() {
             let object={
                 title: formData.get('title'),
                 author: formData.get('author'),
-                content: formData.get('content')
+                content: formData.get('content'),
+                tags:    formData.get('tags')
             }
             console.log(object);
             try{
 
-                await fetch(`http://localhost:3000/posts/${postId}`,{
+                await fetch(`http://localhost:3000/posts/5fcfa555bdec50089c289883`,{
                     method:'PATCH',
                     headers:{
                         'Content-Type': 'application/json'
                     },
                     body: JSON.stringify(object)
                 })
-                window.location.replace('index.html')
+               // window.location.replace('index.html')
 
             } catch (error){
                 document.getElementById('error-message-box').innerText=error;

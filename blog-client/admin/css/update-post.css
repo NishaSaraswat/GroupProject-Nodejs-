@@ -1,0 +1,50 @@
+
+/* update-post css*/
+
+body{
+    box-sizing: border-box;
+    background-image: linear-gradient(rgb(102, 116, 190),white);
+    
+    /*background-color: rgb(211, 211, 228);*/
+}
+
+
+header{
+    margin-left: 80%;
+
+}
+
+h1{
+    margin-top: 3em;
+}
+
+h1,
+input,
+lable,
+textarea,
+button,
+a{
+    display: block;
+    width: 50%;
+    margin-left: 25%;
+    height: 1.5em;
+}
+
+fieldset{
+    display: block;
+    width: 50%;
+    margin-left: 25%;
+    
+}
+
+
+.input label,
+a{
+    margin-left: 50%;
+    margin-top: 1em;
+}
+
+.input{
+    margin-bottom:1em;
+}
+

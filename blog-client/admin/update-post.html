@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Update page</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/update-post.css">
 </head>
 <body>
     <header><a href="#">Blog page</a></header>
@@ -21,12 +21,23 @@
         </div>
         <div class="input">
             <lable for="content">content</lable>
-            <textarea type="text" name="content" id="content-input" value="content"></textarea>
+            <textarea type="text" name="content" id="content-input" rows="10" cols="50"></textarea>
         </div>
+        <fieldset>      
+            <legend multiple>Tags</legend>     
+                <input class="tags" type="checkbox" name="tags" value="food">Food<br>      
+                <input class="tags" type="checkbox" name="tags" value="travel">Travel<br>      
+                <input class="tags" type="checkbox" name="tags" value="sports">Sports<br>  
+                <input class="tags" type="checkbox" name="tags" value="economics">Economics<br> 
+                <input class="tags" type="checkbox" name="tags" value="art">Art<br> 
+            <br>            
+        </fieldset>   
+        <br><br>
         <input type="submit" value="Update">
     </form>
-    <a href="#">←Back</a>
+    <a href="./index.html">←Back</a>
     <div id="error-message-box"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/update-post.js"></script>
 </body>
 </html>
