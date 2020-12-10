@@ -30,9 +30,10 @@ async function fetchPost() {
             </tr>`
     }
     posts.innerHTML += postHTML;
+    deletePost();
 }
 
-    deletePost();
+    
 
 
 function deletePost() {
