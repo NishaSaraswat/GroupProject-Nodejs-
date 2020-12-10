@@ -23,11 +23,9 @@ async function fetchPost() {
             <p>${post.content} <br>
             <span class="date">${postDate.getFullYear()}-${postDate.getMonth()}-${postDate.getDate()}</span></p>
             </td>
-            </tr>
-            <tr>
             <td>
-            <a href = "#"> Update</a>
-            <a href = "#"> Delete</a>
+            <a href = "#" class = "update-post-btn"> Update</a>
+            <a href = "#" class = "delete-post-btn"> Delete</a>
            </td>
             </tr>`
     }
