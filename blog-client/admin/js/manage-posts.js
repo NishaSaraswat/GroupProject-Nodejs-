@@ -33,7 +33,7 @@ async function fetchPost() {
     }
     posts.innerHTML += postHTML;
 }
-=======
+
     deletePost();
 
 
