@@ -1,3 +1,5 @@
+//for single blog-post
+
 window.onload = function () {
     fetchData();
 }

@@ -1,3 +1,5 @@
+//for multiple blog-posts
+
 window.onload = function () {
     fetchPosts();
     }
