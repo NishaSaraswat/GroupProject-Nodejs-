@@ -18,7 +18,7 @@ window.onload = function() {
         }
         
         try{
-            const response=await fetch(`http://localhost:3000/posts/5fcfa555bdec50089c289883`);
+            const response=await fetch(`http://localhost:3000/posts/${postId}`);
             const data=await response.json();
             $('#title-input')[0].value=`${data.title}`; 
             $('#author-input')[0].value=`${data.author}`;
@@ -50,7 +50,7 @@ window.onload = function() {
             console.log(object);
             try{
 
-                await fetch(`http://localhost:3000/posts/5fcfa555bdec50089c289883`,{
+                await fetch(`http://localhost:3000/posts/${postId}`,{
                     method:'PATCH',
                     headers:{
                         'Content-Type': 'application/json'
