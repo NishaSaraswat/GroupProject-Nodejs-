@@ -5,9 +5,12 @@ window.onload = function() {
    
     
     async function prefillPostData(){
+       
+        
+        
         const urlParams=new URLSearchParams(window.location.search);
         const postId=urlParams.get('id');
-        let postTagsChoices='';
+        /*let postTagsChoices='';
         function getSelectedCheckboxValues(name) {
             const checkboxes = document.querySelectorAll(`input[name="${name}"]:checked`);
             let values = [];
@@ -15,11 +18,12 @@ window.onload = function() {
                 values.push(checkbox.value);
             });
             return values;
-        }
+        }*/
         
         try{
-            const response=await fetch(`http://localhost:3000/posts/5fcfa555bdec50089c289883`);
+            const response=await fetch('http://localhost:3000/posts/'+postId);
             const data=await response.json();
+            console.log(data);
             $('#title-input')[0].value=`${data.title}`; 
             $('#author-input')[0].value=`${data.author}`;
             $('#content-input')[0].innerText=`${data.content}`;
@@ -29,8 +33,8 @@ window.onload = function() {
             $('#error-message-box')[0].innerText=error;
         }
        
+    }
 
-}
 
 
     
@@ -50,7 +54,7 @@ window.onload = function() {
             console.log(object);
             try{
 
-                await fetch(`http://localhost:3000/posts/5fcfa555bdec50089c289883`,{
+                await fetch('http://localhost:3000/posts/'+postId,{
                     method:'PATCH',
                     headers:{
                         'Content-Type': 'application/json'
