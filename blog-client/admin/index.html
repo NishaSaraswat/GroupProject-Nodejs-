@@ -4,9 +4,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap">
 </head>
 <body>
+
     <table id = "post-table"></table>
+=======
+    <h1>Blog page</h1>
+    <h2>Blog posts</h2>
+    <a href="create-post.html" "admin-button" class="button">Create new post</a>
+    <table id="table-posts">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Tags</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="table-posts-data"></tbody>
+  </table>
     <script src="js/manage-posts.js"></script>
 </body>
 </html>

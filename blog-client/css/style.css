@@ -1,0 +1,57 @@
+h1,h2,p,a {
+    font-family: 'Georgia', serif;
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    background-color: rgba(201, 76, 76, 0.3);
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#container {
+   max-width: 960px;
+   margin: auto;
+   border-top: 1px solid;
+}
+
+#admin-button {
+    align-self: flex-end;
+    margin-right: 100px;
+}
+
+.button {
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 5px;
+    text-align: center;
+    margin: 10px 0;
+    font-size: 15px;
+  }
+a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+.blog-post-text {
+    white-space: nowrap; 
+    width: 500px; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+
+.single-post-text {
+    width: 500px;
+}
+
+
+div {
+    border-bottom: 1px dashed black;
+}
+
+#read-more-link {
+    font-weight: bold;
+}
