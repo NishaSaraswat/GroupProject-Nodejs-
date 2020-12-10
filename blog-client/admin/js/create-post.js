@@ -3,11 +3,24 @@ let form = document.getElementById("createPostForm");
 let title = document.getElementById("title");
 let author = document.getElementById("author");
 let content = document.getElementById("content");
-
+let tags = document.getElementsByName("tags");
+let selectedItems = "";
 //Events
 form.addEventListener("submit", createPost);
 let postHTML = "";
 
+for (let tag of tags) {
+
+    tag.addEventListener("click", function () {
+
+        if (tag.checked){
+            selectedItems += [tag.value] + " ,";
+        console.log(selectedItems);
+    }else{
+        selectedItems = "";
+    }
+    });
+}
 //Functions
 async function createPost(e) {
     e.preventDefault();
@@ -16,8 +29,8 @@ async function createPost(e) {
 
         title: title.value,
         author: author.value,
-        content: content.value
-        
+        content: content.value,
+        tags: selectedItems
     }
     console.log(JSON.stringify(object));
     try {
