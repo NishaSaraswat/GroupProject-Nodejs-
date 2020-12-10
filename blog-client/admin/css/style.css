@@ -3,16 +3,19 @@ table th, td{
     border: 1px solid black;
     font-family: 'Georgia', serif;
     font-size: 16px;
-    padding: 10px;
+   line-height: 20px;
+   padding-left: 10px;
     background: #ffffffbf;
 }
 h1,h2,p,a{
     font-family: 'Georgia',serif;
     text-decoration:none;
     color: black;
+    padding-right: 70px;
 }
 
 body{
+    box-sizing: border-box;
     background-color: rgba(201, 76, 76, 0.3);
     align-items: center;
     display: flex;
@@ -59,7 +62,7 @@ margin: auto;
 .update-post-button{
     padding-bottom: 10px;
 }
-=======
+
 /* update-post css*/
 
 body{
