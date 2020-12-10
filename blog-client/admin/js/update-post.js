@@ -10,10 +10,9 @@ for (let tag of tags) {
 
         if (tag.checked===true){
             checkedBoxesValues += [tag.value] + " ,";
-        console.log(checkedBoxesValues);
-    }else{
-        checkedBoxesValues = "";
-    }
+        }else{
+            checkedBoxesValues = "";
+        }
     });
 }
     
@@ -31,12 +30,8 @@ for (let tag of tags) {
         } catch (error){
             $('#error-message-box')[0].innerText=error;
         }
-       
-
 }
 
-
-    
     async function updatePost(){
         const urlParams = new URLSearchParams(window.location.search);
         const postId=urlParams.get('id');
@@ -50,7 +45,6 @@ for (let tag of tags) {
                 content: formData.get('content'),
                 tags:    checkedBoxesValues
             }
-            console.log(object);
             try{
 
                 await fetch(`http://localhost:3000/posts/${postId}`,{
