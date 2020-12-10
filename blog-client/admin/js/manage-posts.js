@@ -1,5 +1,45 @@
 
+
+window.onload = function(){
+    fetchPost();
+}
+//Selectors
+let postHTML = "";
+let posts = document.getElementById("table-posts");
+
+async function fetchPost() {
+
+
+    let response = await fetch(`http://localhost:3000/posts`);
+    let data = await response.json();
+    //console.log(data);
+    for (let post of data) {
+        console.log(post);
+        let postDate = new Date(post.date);
+
+        postHTML += `
+            <tr>
+            <td>
+            <p>${post.title} <br>
+            <span class="date">${postDate.getFullYear()}-${postDate.getMonth()}-${postDate.getDate()}</span></p>
+            </td>
+            <td>
+            <p>${post.author} <br>
+            </td>
+            <td>
+            <p>${post.tags} <br>
+            </td>
+            <td>
+            <a href = "#" class = "update-post-btn"> Update</a>
+            <a href = "#" class = "delete-post-btn"> Delete</a>
+           </td>
+            </tr>`
+    }
+    posts.innerHTML += postHTML;
     deletePost();
+}
+
+    
 
 
 function deletePost() {
@@ -26,3 +66,4 @@ function deletePost() {
         })
     }
 }
+
