@@ -26,7 +26,7 @@ window.onload = function() {
             postTagsChoices+=getSelectedCheckboxValues('tags')
         
         } catch (error){
-            document.getElementById('error-message-box').innerText=error;
+            $('#error-message-box')[0].innerText=error;
         }
        
 
