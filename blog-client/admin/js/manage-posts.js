@@ -20,7 +20,7 @@ async function fetchPost() {
         postHTML += `
             <tr>
             <td>
-            <p>${post.content} <br>
+            <p>${post.title} <br>
             <span class="date">${postDate.getFullYear()}-${postDate.getMonth()}-${postDate.getDate()}</span></p>
             </td>
             <td>
