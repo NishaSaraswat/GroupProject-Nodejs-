@@ -30,7 +30,7 @@ async function fetchPost() {
             <p>${post.tags} <br>
             </td>
             <td>
-            <a href = "#" class = "update-post-btn"> Update</a>
+            <a href = "update-post.html?id=${post['_id']}" class = "update-post-btn" > Update</a>
             <a href = "#" class = "delete-post-btn" data-id="${post['_id']}" > Delete</a>
            </td>
             </tr>`
