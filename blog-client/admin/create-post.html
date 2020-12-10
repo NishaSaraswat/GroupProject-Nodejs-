@@ -8,25 +8,25 @@
 </head>
 
 <body>
-    <form id="createPost">
+    <form id="createPostForm">
         <label for="title">Title</label><br>
-        <input type="text"><br><br>
+        <input type="text" id="title"><br><br>
         <label for="author">Author</label><br>
-        <input type="text"><br><br>
-        <textarea rows="10" cols="50">Content</textarea><br><br>
+        <input type="text" id="author"><br><br>
+        <textarea id="content" rows="10" cols="50">Content</textarea><br><br>
         
             <fieldset>      
                 <legend>Tags</legend>      
-                <input type="checkbox" name="tag1" value="food">Food<br>      
-                <input type="checkbox" name="tag2" value="travel">Travel<br>      
-                <input type="checkbox" name="tag3" value="sports">Sports<br>  
-                <input type="checkbox" name="tag4" value="economics">Economics<br> 
-                <input type="checkbox" name="tag5" value="art">Art<br> 
+                <input type="checkbox" name="tag" value="food">Food<br>      
+                <input type="checkbox" name="tag" value="travel">Travel<br>      
+                <input type="checkbox" name="tag" value="sports">Sports<br>  
+                <input type="checkbox" name="tag" value="economics">Economics<br> 
+                <input type="checkbox" name="tag" value="art">Art<br> 
                 <br>            
             </fieldset>   
             <br><br>
         <button type="submit">create</button><br><br>
-        <a href="#">back</a>
+        <a href="admin/index.html">&#x2190;back</a>
     </form>
     <script src="js/create-post.js"></script>
 </body>
