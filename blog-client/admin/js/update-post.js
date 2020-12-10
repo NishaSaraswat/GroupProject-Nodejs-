@@ -60,7 +60,7 @@ window.onload = function() {
                // window.location.replace('index.html')
 
             } catch (error){
-                document.getElementById('error-message-box').innerText=error;
+                $('#error-message-box')[0].innerText=error;
             }
 
         })};
