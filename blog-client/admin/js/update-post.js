@@ -2,20 +2,24 @@ window.onload = function() {
     prefillPostData();
     updatePost();
 }
-   
+let tags = $(".tags");
+let checkedBoxesValues = "";
+for (let tag of tags) {
+
+    tag.addEventListener("click", function () {
+
+        if (tag.checked===true){
+            checkedBoxesValues += [tag.value] + " ,";
+        console.log(checkedBoxesValues);
+    }else{
+        checkedBoxesValues = "";
+    }
+    });
+}
     
     async function prefillPostData(){
         const urlParams=new URLSearchParams(window.location.search);
         const postId=urlParams.get('id');
-        let postTagsChoices='';
-        function getSelectedCheckboxValues(name) {
-            const checkboxes = document.querySelectorAll(`input[name="${name}"]:checked`);
-            let values = [];
-            checkboxes.forEach((checkbox) => {
-                values.push(checkbox.value);
-            });
-            return values;
-        }
         
         try{
             const response=await fetch(`http://localhost:3000/posts/${postId}`);
@@ -23,7 +27,6 @@ window.onload = function() {
             $('#title-input')[0].value=`${data.title}`; 
             $('#author-input')[0].value=`${data.author}`;
             $('#content-input')[0].innerText=`${data.content}`;
-            postTagsChoices+=getSelectedCheckboxValues('tags')
         
         } catch (error){
             $('#error-message-box')[0].innerText=error;
@@ -45,7 +48,7 @@ window.onload = function() {
                 title: formData.get('title'),
                 author: formData.get('author'),
                 content: formData.get('content'),
-                tags:    formData.get('tags')
+                tags:    checkedBoxesValues
             }
             console.log(object);
             try{
