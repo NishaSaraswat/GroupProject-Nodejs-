@@ -6,6 +6,8 @@ table th, td{
    line-height: 20px;
    padding-left: 10px;
     background: #ffffffbf;
+    border-radius: 5px;
+
 }
 h1,h2,p,a{
     font-family: 'Georgia',serif;
@@ -100,5 +102,8 @@ a{
 
 .input{
     margin-bottom:1em;
+}
+input{
+    border-radius: 5px;
 }
 
