@@ -21,6 +21,7 @@ window.onload = function () {
                         <p>${postDate.getFullYear()}-${postDate.getMonth()}-${postDate.getDate()}</p>
                         <p>Tags: ${posts.tags}</p>
                         <p class="blog-post-text">${posts.content.substring(0, 100)}</p>
+                        <a href="/blog-client/post.html">read more...</a>
                     </div>
                 `;
             }
