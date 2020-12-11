@@ -2,49 +2,82 @@
 /* update-post css*/
 
 body{
-    box-sizing: border-box;
-    background-image: linear-gradient(rgb(219, 170, 142),white);
-    
+    background-color:rgb(226, 224, 224);
+
+    font-family:SFProDisplay-Regular, Helvetica, Arial, sans-serif;
     /*background-color: rgb(211, 211, 228);*/
 }
 
-
-header{
-    margin-left: 80%;
-
+#header-container{
+    background-color: #29497c;
+    height: 4.5em;
+    width:100%;
 }
 
-h1{
-    margin-top: 3em;
-}
-
-h1,
-input,
-lable,
-textarea,
-button,
-a{
-    display: block;
-    width: 50%;
-    margin-left: 25%;
-   
-}
-
-fieldset{
-    display: block;
-    width: 50%;
-    margin-left: 25%;
+#blog-page-link{
+    margin-left: 70%;
+    color:white;
+    font-size: 1em;
+    text-decoration: none;
     
 }
 
+#page-title{
+    
+    display: inline-block;
+    color:white;
+    padding-left:1em;
+ 
+}
+
+
+form .input{
+    display: block;
+    margin-left: 30%;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
 
 .input label,
-a{
+.input input{
+    display: block;
+    width: 60%;
+    margin-top: 0.5em; 
+    height:2em; 
+}
+
+.input textarea{
+    display: block;
+    width: 60%;
+    margin-top: 0.5em;  
+}
+
+#checkbox{
+    display: block;
+    width: 40%;
+    margin-left: 30%;
+    
+}
+
+#update{
+    display: block;
+    width: 42%;
+    margin-left: 30%;
+    height:2em;
+}
+
+#goback-link{
+    display: block;
+    width: 33%;
     margin-left: 50%;
     margin-top: 1em;
 }
 
-.input{
-    margin-bottom:1em;
+
+input[type="checkbox"]
+{
+    vertical-align:middle;
 }
+
+
 
