@@ -5,7 +5,9 @@ h1,h2,p,a {
 }
 
 body {
-    background-color: rgba(201, 76, 76, 0.3);
+    /*background-color: rgba(201, 76, 76, 0.3);*/
+    background-image: url('Pink.gif');
+    background-size: contain;
     align-items: center;
     display: flex;
     flex-direction: column;
