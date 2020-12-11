@@ -42,6 +42,7 @@ async function createPost(e) {
             body: JSON.stringify(object)
 
         });
+        window.location.replace("./index.html");
     } catch (error) {
         throw new Error(error);
     }
