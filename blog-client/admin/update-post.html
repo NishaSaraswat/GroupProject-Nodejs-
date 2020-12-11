@@ -7,9 +7,12 @@
     <link rel="stylesheet" href="css/update-post.css">
 </head>
 <body>
-    <header><a href="./index.html">Blog page</a></header>
+    <header id="header-container">
+        <h1 id="page-title">Update post</h1>
+        <a href="./index.html" id="blog-page-link">Blog page</a>
+    </header>
     <hr>
-    <h1>Update post</h1>
+    
     <form id="update-post-form">
         <div class="input">
             <lable for="title">Title</lable>
@@ -23,8 +26,8 @@
             <lable for="content">Content</lable>
             <textarea type="text" name="content" id="content-input" rows="15" cols="50"></textarea>
         </div>
-        <fieldset>      
-            <legend>Tags</legend>     
+        <fieldset id="checkbox">      
+            <legend>Tags</legend>    
                 <input class="tags" type="checkbox" name="tags" value="food">Food<br>      
                 <input class="tags" type="checkbox" name="tags" value="travel">Travel<br>      
                 <input class="tags" type="checkbox" name="tags" value="sports">Sports<br>  
@@ -33,9 +36,9 @@
             <br>            
         </fieldset>   
         <br><br>
-        <input type="submit" value="Update">
+        <input id="update" type="submit" value="Update">
     </form>
-    <a href="./index.html">←Back</a>
+    <a href="./index.html" id="goback-link">←Back</a>
     <div id="error-message-box"></div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/update-post.js"></script>
