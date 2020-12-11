@@ -13,7 +13,7 @@ async function fetchPost() {
     let response = await fetch(`http://localhost:3000/posts`);
     let data = await response.json();
     //console.log(data);
-    for (let post of data) {
+    for (let post of data.reverse()) {
         console.log(post);
         let postDate = new Date(post.date);
 
