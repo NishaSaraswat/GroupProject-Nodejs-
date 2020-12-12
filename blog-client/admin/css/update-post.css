@@ -2,21 +2,23 @@
 /* update-post css*/
 
 body{
-    background-color:rgb(240, 234, 234);
+    /*background-color:rgb(240, 234, 234);*/
+    background-image: url('img/blueboard.jpg');
+    background-size: cover;
 
     font-family:SFProDisplay-Regular, Helvetica, Arial, sans-serif;
     /*background-color: rgb(211, 211, 228);*/
 }
 
 #header-container{
-    background-color: #29497c;
+    /*background-color: #29497c;*/
     height: 4.5em;
     width:100%;
 }
 
 #blog-page-link{
-    margin-left: 70%;
-    color:white;
+    margin-left: 22%;
+    color:rgb(35, 3, 109);
     font-size: 1em;
     text-decoration: none;
     
@@ -25,15 +27,15 @@ body{
 #page-title{
     
     display: inline-block;
-    color:white;
-    padding-left:1em;
+    color:rgb(35, 3, 109);
+    padding-left:53%;
  
 }
 
 
 form .input{
     display: block;
-    margin-left: 30%;
+    margin-left: 45%;
     margin-bottom: 1em;
     margin-top: 1em;
 }
@@ -44,6 +46,7 @@ form .input{
     width: 60%;
     margin-top: 0.5em; 
     height:2em; 
+    color:rgb(19, 2, 58);
 }
 
 .input textarea{
@@ -54,24 +57,25 @@ form .input{
 
 #checkbox{
     display: block;
-    width: 40%;
-    margin-left: 30%;
+    width: 32%;
+    margin-left: 45%;
+    color:rgb(19, 3, 58);
     
 }
 
 #update{
     display: block;
     width: 10%;
-    margin-left:45%;
+    margin-left:54%;
     height:2em;
-    background-color: #29497c;
+    background-color: rgb(35, 4, 109);
     color:white;
 }
 
 #goback-link{
     display: block;
     width: 33%;
-    margin-left: 48%;
+    margin-left: 57%;
     margin-top: 1em;
 }
 
