@@ -4,6 +4,7 @@ let title = document.getElementById("title");
 let author = document.getElementById("author");
 let content = document.getElementById("content");
 let tags = document.getElementsByName("tags");
+let submitTags = document.getElementById("submitTag");
 let selectedItems = [];
 //Events
 form.addEventListener("submit", createPost);
@@ -38,7 +39,6 @@ async function createPost(e) {
         content: content.value,
         tags: selectedItems
     }
-    console.log(JSON.stringify(object));
     try {
         await fetch("http://localhost:3000/posts", {
             method: 'POST',

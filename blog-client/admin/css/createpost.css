@@ -24,7 +24,7 @@ form fieldset {
     line-height: 40px;
     border-radius: 5px;
     border-color: darkviolet;
-    
+
 }
 
 fieldset input {
@@ -36,7 +36,7 @@ fieldset input {
 }
 
 input {
-    line-height: 30px;
+    line-height: 25px;
     border-radius: 5px;
     border-style: none;
 }
@@ -49,7 +49,7 @@ input {
 
 button {
 
-    margin-left: 170px;
+    margin-left: 220px;
     line-height: 20px;
     padding: 15px;
     background-color: rgb(143, 190, 228);
@@ -67,11 +67,10 @@ textarea{
 button:hover {
 
     background-color: cornflowerblue;
-    color: floralwhite;
 }
 
 a {
-    margin-left: 180px;
+    margin-left: 220px;
     text-decoration: none;
 }
 
