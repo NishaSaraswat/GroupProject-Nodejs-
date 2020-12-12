@@ -12,15 +12,21 @@ let postHTML = "";
 for (let tag of tags) {
 
     tag.addEventListener("click", function () {
-
-        if (tag.checked){
-            selectedItems.push(tag.value);
-        console.log(selectedItems);
-    }else{
-        selectedItems = "";
-    }
+       
+        submitTags.addEventListener("click",function(){
+            if (tag.checked){
+                selectedItems += [tag.value]+",";
+            console.log(selectedItems);
+        }else{
+            this.value = "";
+            
+        }
+        
+        });
+        
     });
 }
+
 //Functions
 async function createPost(e) {
     e.preventDefault();
@@ -30,7 +36,7 @@ async function createPost(e) {
         title: title.value,
         author: author.value,
         content: content.value,
-        tags: selectedItems.join(",")
+        tags: selectedItems
     }
     console.log(JSON.stringify(object));
     try {

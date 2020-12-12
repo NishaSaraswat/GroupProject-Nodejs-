@@ -1,0 +1,94 @@
+body {
+
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+   background-image: url(/blog-client/admin/css/img/desktop-3261768_1920.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   color:  blueviolet;
+   font-weight: 800;
+}
+
+#main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: larger;
+   
+}
+
+form fieldset {
+
+    padding-left: 10%;
+    line-height: 40px;
+    border-radius: 5px;
+    border-color: darkviolet;
+    
+}
+
+fieldset input {
+
+    margin-right: 10px;
+    margin-left: 42%;
+    
+    
+}
+
+input {
+    line-height: 30px;
+    border-radius: 5px;
+    border-style: none;
+}
+
+#author,
+#title {
+
+    width: 100%;
+}
+
+button {
+
+    margin-left: 170px;
+    line-height: 20px;
+    padding: 15px;
+    background-color: rgb(143, 190, 228);
+    color: blueviolet;
+    border-radius: 5px;
+    border-style: none;
+    font-size: larger;
+    
+}
+textarea{
+    border-radius: 8px;
+    border-style: none;
+}
+
+button:hover {
+
+    background-color: cornflowerblue;
+    color: floralwhite;
+}
+
+a {
+    margin-left: 180px;
+    text-decoration: none;
+}
+
+h4 {
+    padding-top: 2%;
+    text-align: end;
+    margin-right: 50px;
+    font-size: larger;
+}
+
+hr {
+    border: none;
+    border-top: 3px double;
+    color:  blueviolet;
+    height: 5px;
+    margin-left: 80%;
+    margin-right: 10px;
+
+}
+

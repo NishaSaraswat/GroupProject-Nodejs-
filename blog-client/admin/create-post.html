@@ -4,18 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/createpost.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <a href="/blog-client/index.html">Blog Page</a>
-
+    <h4> <a href="/blog-client/index.html">Blog Page</a></h4>
+   <hr>
+    <div id = "main-container">
     <form id="createPostForm">
         <label for="title">Title</label><br>
         <input type="text" id="title"><br><br>
         <label for="author">Author</label><br>
         <input type="text" id="author"><br><br>
-        Content
+        <p>Content</p>
         <textarea id="content" rows="10" cols="50"></textarea><br><br>
         
             <fieldset>      
@@ -31,6 +34,7 @@
         <button type="submit">create</button><br><br>
         <a href="./index.html">&#x2190;back</a>
     </form>
+</div>
     <script src="js/create-post.js"></script>
 </body>
 
