@@ -3,7 +3,7 @@ body {
     box-sizing: border-box;
     margin: 0;
     font-family: 'Open Sans', sans-serif;
-   background-image: url(/blog-client/admin/css/img/desktop-3261768_1920.jpg);
+   background-image: url("desktop-3261768_1920.jpg");
    background-position: center;
    background-repeat: no-repeat;
    color:  blueviolet;
