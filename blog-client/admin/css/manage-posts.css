@@ -1,0 +1,46 @@
+body {
+
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+   background-image: url(/blog-client/admin/css/img/purpuledots.jpeg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   color:rgb(110, 10, 153);
+   font-weight: 800;
+}
+h1{
+    
+    text-align: center;
+    padding-top: 40px;
+    font-size: 4em;
+    
+}
+a{
+    text-decoration: none;
+    
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;  
+}
+#table-posts tr,td{
+
+    border: 2px white solid;
+}
+td{
+    text-align: center;
+    line-height: 25px;
+}
+table{
+padding-left: 10px;
+padding-right: 10px;
+    padding-top: 30px;
+}
+ a:hover{
+background-color: powderblue;
+background-size: auto;  
+}
+
+
