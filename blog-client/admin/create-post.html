@@ -4,33 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/createpost.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <a href="/blog-client/index.html">Blog Page</a>
-
+    
+   <h4> <a href="/blog-client/index.html">Blog Page</a></h4>
+   <hr>
+<div id = "main-container">
     <form id="createPostForm">
         <label for="title">Title</label><br>
-        <input type="text" id="title"><br><br>
+        <input type="text" id="title"><br><br><br>
         <label for="author">Author</label><br>
         <input type="text" id="author"><br><br>
-        Content
-        <textarea id="content" rows="10" cols="50"></textarea><br><br>
+
+        <p>Content</p> 
+        <textarea id="content" rows="15" cols="62"></textarea><br><br>
         
             <fieldset>      
-                <legend>Tags</legend>      
+                <legend style="text-align:center;">Tags</legend>      
                 <input type="checkbox" name="tags" value="Food">Food<br>      
-                <input type="checkbox" name="tags" value="Travel">Travel<br>      
-                <input type="checkbox" name="tags" value="Sports">Sports<br>  
+                <input type="checkbox" name="tags" value="Travel">Travel<br>     
+                <input type="checkbox" name="tags" value="Sports">Sports<br>
                 <input type="checkbox" name="tags" value="Economics">Economics<br> 
                 <input type="checkbox" name="tags" value="Art">Art<br> 
                 <br>            
             </fieldset>   
             <br><br>
-        <button type="submit">create</button><br><br>
+        <button type="submit" id="submitTag">create</button><br><br>
         <a href="./index.html">&#x2190;back</a>
     </form>
+</div>
     <script src="js/create-post.js"></script>
 </body>
 
