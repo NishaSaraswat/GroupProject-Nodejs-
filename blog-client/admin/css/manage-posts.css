@@ -3,7 +3,7 @@ body {
     box-sizing: border-box;
     margin: 0;
     font-family: 'Open Sans', sans-serif;
-   background-image: url(/blog-client/admin/css/img/purpuledots.jpeg);
+   background-image: url("purpuledots.jpeg");
    background-repeat: no-repeat;
    background-size: cover;
    color:rgb(110, 10, 153);
