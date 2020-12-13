@@ -12,33 +12,35 @@
         <a href="./index.html" id="blog-page-link">Blog page</a>
     </header>
     <hr>
-    
-    <form id="update-post-form">
-        <div class="input">
-            <lable for="title"><strong>Title</strong></lable>
-            <input type="text" name="title" id="title-input">
-        </div>
-        <div class="input">
-            <lable for="author"><strong>Author</strong></lable>
-            <input type="text" name="author" id="author-input">
-        </div>
-        <div class="input">
-            <lable for="content"><strong>Content</strong></lable>
-            <textarea type="text" name="content" id="content-input" rows="10" cols="50"></textarea>
-        </div>
-        <fieldset id="checkbox">      
-            <legend><strong>Tags</strong></legend>    
-                <input class="tags" type="checkbox" name="tags" value="food">Food<br>      
-                <input class="tags" type="checkbox" name="tags" value="travel">Travel<br>      
-                <input class="tags" type="checkbox" name="tags" value="sports">Sports<br>  
-                <input class="tags" type="checkbox" name="tags" value="economics">Economics<br> 
-                <input class="tags" type="checkbox" name="tags" value="art">Art<br> 
-            <br>            
-        </fieldset>   
-        <br><br>
-        <input id="update" type="submit" value="Update">
-    </form>
-    <a href="./index.html" id="goback-link">←Back</a>
+    <div id="update-container">
+        <form>
+            <div class="input">
+                <lable for="title" id="title-lable">Title</lable>
+                <input type="text" name="title" id="title-input">
+            </div>
+            <div class="input">
+                <lable for="author">Author</lable>
+                <input type="text" name="author" id="author-input">
+            </div>
+            <div class="input">
+                <lable for="content">Content</lable>
+                <textarea type="text" name="content" id="content-input" rows="10" cols="50"></textarea>
+            </div>
+            <fieldset id="checkbox">      
+                <legend>Tags</legend>    
+                    <input class="tags" type="checkbox" name="tags" value="food">Food<br>      
+                    <input class="tags" type="checkbox" name="tags" value="travel">Travel<br>      
+                    <input class="tags" type="checkbox" name="tags" value="sports">Sports<br>  
+                    <input class="tags" type="checkbox" name="tags" value="economics">Economics<br> 
+                    <input class="tags" type="checkbox" name="tags" value="art">Art<br> 
+                <br>            
+            </fieldset>   
+            <br><br>
+            <input id="update" type="submit" value="Update">
+            <a href="./index.html" id="goback-link">←Back</a>
+        </form>
+    </div>
+   
     <div id="error-message-box"></div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/update-post.js"></script>
