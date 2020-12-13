@@ -3,10 +3,10 @@ body {
     box-sizing: border-box;
     margin: 0;
     font-family: 'Open Sans', sans-serif;
-   background-image: url("purpuledots.jpeg");
+   background-image: url("water\ color.jpg");
    background-repeat: no-repeat;
    background-size: cover;
-   color:rgb(110, 10, 153);
+   color:blueviolet;
    font-weight: 800;
 }
 h4{
@@ -58,12 +58,19 @@ table{
 padding-left: 10px;
 padding-right: 10px;
     padding-top: 15px;
+    
+    
 }
  a:hover{
-background-color: powderblue;
+background-color: rgb(106, 8, 203);
 background-size: auto;  
-color: rgb(121, 66, 177);
+color: powderblue;
 border-radius: 5px;
+padding:6px;
+}
+th{
+    border: solid 2px white;
+    padding:4px;
 }
 
 

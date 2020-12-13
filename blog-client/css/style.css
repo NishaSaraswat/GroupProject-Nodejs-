@@ -1,41 +1,51 @@
-h1,h2,p,a {
+h1,h2,p,a,h4 {
     font-family: 'Georgia', serif;
     text-decoration: none;
-    color: black;
+    color:#b52c99;
+    border-radius: 5px;
+    padding:2px;
+    font-weight: 600;
 }
 
 body {
     /*background-color: rgba(201, 76, 76, 0.3);*/
-    background-image: url('Pink.gif');
-    background-size: contain;
+    background-image: url('purple-flower.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
     align-items: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    margin-left: 50%;
+
 }
 
 #container {
    max-width: 960px;
    margin: auto;
    border-top: 1px solid;
+   
+   
 }
 
 #admin-button {
     align-self: flex-end;
     margin-right: 100px;
+    font-size: large;
+    font-weight: bolder;
 }
 
 .button {
-    border: 1px solid black;
-    border-radius: 3px;
     padding: 5px;
     text-align: center;
     margin: 10px 0;
     font-size: 15px;
+    border-style: none;
+    border-radius: 5px;
   }
 a:hover {
     text-decoration: underline;
     cursor: pointer;
+    background-color: floralwhite;
   }
 
 .blog-post-text {
@@ -56,4 +66,15 @@ div {
 
 #read-more-link {
     font-weight: bold;
+}
+
+hr{
+
+    border: none;
+    border-top: 3px double;
+    color:  blueviolet;
+    height: 5px;
+    margin-left: 80%;
+    margin-right: 10px;
+
 }
