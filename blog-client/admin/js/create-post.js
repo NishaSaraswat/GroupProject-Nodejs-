@@ -16,15 +16,10 @@ for (let tag of tags) {
        
         submitTags.addEventListener("click",function(){
             if (tag.checked){
-                selectedItems += [tag.value]+",";
-            console.log(selectedItems);
-        }else{
-            this.value = "";
-            
-        }
-        
+                selectedItems.push(tag.value);
+                console.log(selectedItems);
+            }
         });
-        
     });
 }
 
