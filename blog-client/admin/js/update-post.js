@@ -23,16 +23,18 @@ for (const tag of tags) {
             const response=await fetch(`http://localhost:3000/posts/${postId}`);
             const data=await response.json();
             console.log(data);
-            const dataTags=data.tags;
+            const dataTags=data.tags[0];
+            const dataTagsArray=dataTags.split(',')
+            
 
-            console.log(dataTags);
+            console.log(dataTagsArray);
             
             $('#title-input')[0].value=`${data.title}`; 
             $('#author-input')[0].value=`${data.author}`;
             $('#content-input')[0].innerText=`${data.content}`;
             for(const tag of tags){
                 console.log(tag.value)
-                if(dataTags.includes(tag.value)){
+                if(dataTagsArray.includes(tag.value)){
                         tag.checked=true;
                 }
             }
